@@ -10,8 +10,12 @@ import UIKit
 
 class ViewController: UIViewController,UITableViewDataSource,UITableViewDelegate {
 
+    @IBOutlet weak var tableView: UITableView!
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        tableView.backgroundColor = UIColor.clear
+        tableView.separatorStyle = UITableViewCellSeparatorStyle.none
         // Do any additional setup after loading the view, typically from a nib.
     }
 
@@ -55,34 +59,51 @@ class ViewController: UIViewController,UITableViewDataSource,UITableViewDelegate
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell{
     
-        
-        let cell: UITableViewCell
-        
-        //1번째 섹션이라면
-        if indexPath.section == 1{
-        
-            cell = tableView.dequeueReusableCell(withIdentifier: "orangeCell", for: indexPath)
-        
-            //1번째 섹션이 아니라면
-        }else {
+        //섹션이 0번째라면
+        if indexPath.section == 0 {
+            
+            let cell: MyTableViewCell
+            cell = tableView.dequeueReusableCell(withIdentifier: "customCell", for: indexPath) as! MyTableViewCell
+            
+            cell.backgroundColor = UIColor.clear
+            cell.leftLabel?.text = "hello"
+            cell.rightLabel?.text = "world"
+            
+            
+            return cell
+
+        }
+        //아니라면
+        else {
+            
+            let cell: UITableViewCell
+            
+            //1번째 섹션이라면
+            if indexPath.section == 1{
+                
+                cell = tableView.dequeueReusableCell(withIdentifier: "orangeCell", for: indexPath)
+                
+                cell.backgroundColor = UIColor.clear
+                cell.textLabel?.text = "station name"
+                //1번째 섹션이 아니라면
+            }else {
+                
+                cell = tableView.dequeueReusableCell(withIdentifier: "basicCell", for: indexPath)
+                
+                cell.backgroundColor = UIColor.black.withAlphaComponent(0.1)
+                cell.textLabel?.text = "what"
+                
+            }
+            
+            cell.textLabel?.backgroundColor = UIColor.clear
+            cell.textLabel?.textColor = UIColor.white
+            
+            
+            return cell
+
            
-            cell = tableView.dequeueReusableCell(withIdentifier: "basicCell", for: indexPath)
-        
         }
         
-        
-        cell.textLabel?.text = "\(indexPath.section) - \(indexPath.row)"
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        return cell
     }
-
 }
 

@@ -75,9 +75,12 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         }
         
         if indexPath.row % 2 == 0 {
+            
+            cell.textLabel?.backgroundColor = UIColor.clear
             cell.backgroundColor = UIColor.clear
         } else {
             
+            cell.textLabel?.backgroundColor = UIColor.clear
             cell.backgroundColor = UIColor.black.withAlphaComponent(0.1)
         }
         
