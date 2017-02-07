@@ -74,8 +74,60 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         
         let cell = tableView.dequeueReusableCell(withIdentifier: "firstCell", for: indexPath)
         
+        //cell 의 indexPath의 row 에 해당하는 사진 정보를 가져와 봅니다.
+        if let info = self.photoInfos?[indexPath.row]{
+        
+            //사진정보의 title을 텍스트 레이블에 세팅
+            cell.textLabel?.text = info.title
+            
+            //사진정보의 이미지 데이터를 UIImage로 변경해서 cell의 이미지뷰에 세팅
+            if let imageData = info.imageData {
+                cell.imageView?.image = UIImage(data: imageData, scale: 0.1)
+            }
+            
+            //날짜 형식 지정
+            let dateFormatter = DateFormatter()
+            dateFormatter.dateFormat = "yyyy.MM.dd hh:mm:ss"
+        
+            //사진이 저장된 시점을 불러와서 cell의 detailTextLabel에 세팅
+            let dateString = dateFormatter.string(from: info.savedDate)
+            cell.detailTextLabel?.text = dateString
+            
+        }
+        
         return cell
     }
+    
+    
+    // 스토리보드의 세그를 통해 화면을 이동하기 전에 처리해 주어야 할 일을 넣어주는 함수
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+
+        let nextViewController = segue.destination as? AddImageViewController
+        let selectedIndex = self.tableView.indexPathForSelectedRow
+        
+        
+        
+        if let imageViewController = nextViewController{
+            
+            print(" 다음 화면은 이미지 뷰 컨트롤러입니다")
+            if let index = selectedIndex {
+                print("선택된 셀의 index는 \(index.section) 번째 섹션 \(index.row)번째 줄입니다." )
+            
+                //선택된 셀에 해당되는 사진정보를 꺼재옵니다.
+                let info = self.photoInfos?[index.row]
+                
+                //꺼내온 사진 정보를 다음 뷰 컨트롤러의 변수로 넘겨줍니다
+                imageViewController.photoInfoFromPrevController = info
+                
+            
+            }
+        }
+    
+    
+    }
+    
+    
+    
     
 
 }

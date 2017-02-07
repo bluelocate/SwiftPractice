@@ -33,7 +33,13 @@ class AddImageViewController: UIViewController,UIImagePickerControllerDelegate,U
         // Pass the selected object to the new view controller.
     }
     */
+    
+    //이전 화면에서 넘겨줄 PhotoInfo 정보
+    //넘겨주지 않을 수도 있기 때문에 옵셔널
+    var photoInfoFromPrevController: PhotoInfo?
+    
     @IBOutlet weak var titleField: UITextField!
+    
     @IBOutlet weak var selectedImage: UIImageView!
     
     @IBAction func clickSaveButton(_ sender: UIButton) {
@@ -47,8 +53,17 @@ class AddImageViewController: UIViewController,UIImagePickerControllerDelegate,U
         //사용자 사진을 담을 객체 초기화 하여 photoInfo 이름으로 사용
         let photoInfo: PhotoInfo = PhotoInfo()
         
-    
-        
+//    
+//        //이전 화면에서 넘어온 정보가 있다면
+//        if let infoFromPrev = self.photoInfoFromPrevController{
+//          //그 정보를 받아서 쓰고
+//            photoInfo = infoFromPrev
+//        }
+//        //없으면 새로 생성
+//        else {
+//            photoInfo = PhotoInfo()
+//        }
+//        
         
         
         if let image = self.selectedImage.image{
@@ -189,6 +204,27 @@ class AddImageViewController: UIViewController,UIImagePickerControllerDelegate,U
         
         
     }
+    
+    
+    // AddImageViewController 가 화면에 보이기 직전에 수행할 일을 넘겨줍니다.
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        
+        
+        
+        if let info = self.photoInfoFromPrevController{
+            
+        
+            //사진 정보의 title을 제목 필드에 세팅
+            self.titleField.text = info.title
+
+            //사진 정보의 이미지 데이터를 UIImage로 변경해서 selectedImage 이미지뷰에 세팅
+            if let imageData = info.imageData{
+                self.selectedImage?.image = UIImage(data: imageData, scale: 1.0)
+            }
+        }
+    }
+    
 
     
     

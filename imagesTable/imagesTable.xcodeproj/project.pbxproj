@@ -19,7 +19,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		4000D6ED1E49703300FBE648 /* PhotoInfo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PhotoInfo.swift; path = imagesTable/PhotoInfo.swift; sourceTree = "<group>"; };
+		4000D6ED1E49703300FBE648 /* PhotoInfo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotoInfo.swift; sourceTree = "<group>"; };
 		408098561E484EB7005CFB1D /* imagesTable.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = imagesTable.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		408098591E484EB7005CFB1D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4080985B1E484EB7005CFB1D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -57,7 +57,6 @@
 		4080984D1E484EB7005CFB1D = {
 			isa = PBXGroup;
 			children = (
-				4000D6ED1E49703300FBE648 /* PhotoInfo.swift */,
 				408098581E484EB7005CFB1D /* imagesTable */,
 				408098571E484EB7005CFB1D /* Products */,
 				5EB85D7F2C001737BCB69862 /* Pods */,
@@ -76,6 +75,7 @@
 		408098581E484EB7005CFB1D /* imagesTable */ = {
 			isa = PBXGroup;
 			children = (
+				4000D6ED1E49703300FBE648 /* PhotoInfo.swift */,
 				4080986D1E485169005CFB1D /* AddImageViewController.swift */,
 				408098591E484EB7005CFB1D /* AppDelegate.swift */,
 				4080985B1E484EB7005CFB1D /* ViewController.swift */,
