@@ -1,0 +1,400 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		CA00EBD81E46F2E4007E9B27 /* Diary.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA00EBD71E46F2E4007E9B27 /* Diary.swift */; };
+		CA00EBDC1E46F5B3007E9B27 /* Picture.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA00EBDB1E46F5B3007E9B27 /* Picture.swift */; };
+		CA00EBE21E471131007E9B27 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CA00EBE01E471131007E9B27 /* LaunchScreen.storyboard */; };
+		CA00EBE31E471131007E9B27 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CA00EBE11E471131007E9B27 /* Main.storyboard */; };
+		CA00EBE71E471847007E9B27 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA00EBE61E471847007E9B27 /* DetailViewController.swift */; };
+		CA00EBF31E471BEC007E9B27 /* 01.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CA00EBE91E471BEC007E9B27 /* 01.jpg */; };
+		CA00EBF41E471BEC007E9B27 /* 02.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CA00EBEA1E471BEC007E9B27 /* 02.jpg */; };
+		CA00EBF51E471BEC007E9B27 /* 03.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CA00EBEB1E471BEC007E9B27 /* 03.jpg */; };
+		CA00EBF61E471BEC007E9B27 /* 04.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CA00EBEC1E471BEC007E9B27 /* 04.jpg */; };
+		CA00EBF71E471BEC007E9B27 /* 05.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CA00EBED1E471BEC007E9B27 /* 05.jpg */; };
+		CA00EBF81E471BEC007E9B27 /* 06.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CA00EBEE1E471BEC007E9B27 /* 06.jpg */; };
+		CA00EBF91E471BEC007E9B27 /* 07.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CA00EBEF1E471BEC007E9B27 /* 07.jpg */; };
+		CA00EBFA1E471BEC007E9B27 /* 08.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CA00EBF01E471BEC007E9B27 /* 08.jpg */; };
+		CA00EBFB1E471BEC007E9B27 /* 09.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CA00EBF11E471BEC007E9B27 /* 09.jpg */; };
+		CA00EBFC1E471BEC007E9B27 /* 10.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CA00EBF21E471BEC007E9B27 /* 10.jpg */; };
+		CA2B75FF1E446E7700A6A7B0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA2B75FE1E446E7700A6A7B0 /* AppDelegate.swift */; };
+		CA2B76011E446E7700A6A7B0 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA2B76001E446E7700A6A7B0 /* ViewController.swift */; };
+		CA2B76061E446E7700A6A7B0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CA2B76051E446E7700A6A7B0 /* Assets.xcassets */; };
+		CA2B76121E446EFE00A6A7B0 /* Realm.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CA2B76101E446EFE00A6A7B0 /* Realm.framework */; };
+		CA2B76131E446EFE00A6A7B0 /* Realm.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = CA2B76101E446EFE00A6A7B0 /* Realm.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		CA2B76141E446EFE00A6A7B0 /* RealmSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CA2B76111E446EFE00A6A7B0 /* RealmSwift.framework */; };
+		CA2B76151E446EFE00A6A7B0 /* RealmSwift.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = CA2B76111E446EFE00A6A7B0 /* RealmSwift.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		CA2B76161E446EFE00A6A7B0 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				CA2B76151E446EFE00A6A7B0 /* RealmSwift.framework in Embed Frameworks */,
+				CA2B76131E446EFE00A6A7B0 /* Realm.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		CA00EBD71E46F2E4007E9B27 /* Diary.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Diary.swift; sourceTree = "<group>"; };
+		CA00EBDB1E46F5B3007E9B27 /* Picture.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Picture.swift; sourceTree = "<group>"; };
+		CA00EBE01E471131007E9B27 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
+		CA00EBE11E471131007E9B27 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		CA00EBE61E471847007E9B27 /* DetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		CA00EBE91E471BEC007E9B27 /* 01.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 01.jpg; sourceTree = "<group>"; };
+		CA00EBEA1E471BEC007E9B27 /* 02.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 02.jpg; sourceTree = "<group>"; };
+		CA00EBEB1E471BEC007E9B27 /* 03.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 03.jpg; sourceTree = "<group>"; };
+		CA00EBEC1E471BEC007E9B27 /* 04.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 04.jpg; sourceTree = "<group>"; };
+		CA00EBED1E471BEC007E9B27 /* 05.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 05.jpg; sourceTree = "<group>"; };
+		CA00EBEE1E471BEC007E9B27 /* 06.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 06.jpg; sourceTree = "<group>"; };
+		CA00EBEF1E471BEC007E9B27 /* 07.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 07.jpg; sourceTree = "<group>"; };
+		CA00EBF01E471BEC007E9B27 /* 08.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 08.jpg; sourceTree = "<group>"; };
+		CA00EBF11E471BEC007E9B27 /* 09.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 09.jpg; sourceTree = "<group>"; };
+		CA00EBF21E471BEC007E9B27 /* 10.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 10.jpg; sourceTree = "<group>"; };
+		CA2B75FB1E446E7700A6A7B0 /* StartRealm.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StartRealm.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		CA2B75FE1E446E7700A6A7B0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		CA2B76001E446E7700A6A7B0 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		CA2B76051E446E7700A6A7B0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		CA2B760A1E446E7700A6A7B0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CA2B76101E446EFE00A6A7B0 /* Realm.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Realm.framework; sourceTree = "<group>"; };
+		CA2B76111E446EFE00A6A7B0 /* RealmSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = RealmSwift.framework; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		CA2B75F81E446E7700A6A7B0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CA2B76141E446EFE00A6A7B0 /* RealmSwift.framework in Frameworks */,
+				CA2B76121E446EFE00A6A7B0 /* Realm.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		CA00EBE81E471BEC007E9B27 /* Photos */ = {
+			isa = PBXGroup;
+			children = (
+				CA00EBE91E471BEC007E9B27 /* 01.jpg */,
+				CA00EBEA1E471BEC007E9B27 /* 02.jpg */,
+				CA00EBEB1E471BEC007E9B27 /* 03.jpg */,
+				CA00EBEC1E471BEC007E9B27 /* 04.jpg */,
+				CA00EBED1E471BEC007E9B27 /* 05.jpg */,
+				CA00EBEE1E471BEC007E9B27 /* 06.jpg */,
+				CA00EBEF1E471BEC007E9B27 /* 07.jpg */,
+				CA00EBF01E471BEC007E9B27 /* 08.jpg */,
+				CA00EBF11E471BEC007E9B27 /* 09.jpg */,
+				CA00EBF21E471BEC007E9B27 /* 10.jpg */,
+			);
+			path = Photos;
+			sourceTree = "<group>";
+		};
+		CA2B75F21E446E7700A6A7B0 = {
+			isa = PBXGroup;
+			children = (
+				CA2B76101E446EFE00A6A7B0 /* Realm.framework */,
+				CA2B76111E446EFE00A6A7B0 /* RealmSwift.framework */,
+				CA2B75FD1E446E7700A6A7B0 /* StartRealm */,
+				CA2B75FC1E446E7700A6A7B0 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		CA2B75FC1E446E7700A6A7B0 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CA2B75FB1E446E7700A6A7B0 /* StartRealm.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CA2B75FD1E446E7700A6A7B0 /* StartRealm */ = {
+			isa = PBXGroup;
+			children = (
+				CA00EBE81E471BEC007E9B27 /* Photos */,
+				CA2B75FE1E446E7700A6A7B0 /* AppDelegate.swift */,
+				CA2B76001E446E7700A6A7B0 /* ViewController.swift */,
+				CA00EBE61E471847007E9B27 /* DetailViewController.swift */,
+				CA2B76051E446E7700A6A7B0 /* Assets.xcassets */,
+				CA2B760A1E446E7700A6A7B0 /* Info.plist */,
+				CA00EBD71E46F2E4007E9B27 /* Diary.swift */,
+				CA00EBDB1E46F5B3007E9B27 /* Picture.swift */,
+				CA00EBE01E471131007E9B27 /* LaunchScreen.storyboard */,
+				CA00EBE11E471131007E9B27 /* Main.storyboard */,
+			);
+			path = StartRealm;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		CA2B75FA1E446E7700A6A7B0 /* StartRealm */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CA2B760D1E446E7700A6A7B0 /* Build configuration list for PBXNativeTarget "StartRealm" */;
+			buildPhases = (
+				CA2B75F71E446E7700A6A7B0 /* Sources */,
+				CA2B75F81E446E7700A6A7B0 /* Frameworks */,
+				CA2B75F91E446E7700A6A7B0 /* Resources */,
+				CA2B76161E446EFE00A6A7B0 /* Embed Frameworks */,
+				CA2B76171E446FB800A6A7B0 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = StartRealm;
+			productName = StartRealm;
+			productReference = CA2B75FB1E446E7700A6A7B0 /* StartRealm.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		CA2B75F31E446E7700A6A7B0 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0820;
+				LastUpgradeCheck = 0820;
+				ORGANIZATIONNAME = Eunjoo;
+				TargetAttributes = {
+					CA2B75FA1E446E7700A6A7B0 = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = 2REKM3AWZ4;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = CA2B75F61E446E7700A6A7B0 /* Build configuration list for PBXProject "StartRealm" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CA2B75F21E446E7700A6A7B0;
+			productRefGroup = CA2B75FC1E446E7700A6A7B0 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				CA2B75FA1E446E7700A6A7B0 /* StartRealm */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		CA2B75F91E446E7700A6A7B0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CA00EBFC1E471BEC007E9B27 /* 10.jpg in Resources */,
+				CA00EBF91E471BEC007E9B27 /* 07.jpg in Resources */,
+				CA00EBF51E471BEC007E9B27 /* 03.jpg in Resources */,
+				CA00EBFA1E471BEC007E9B27 /* 08.jpg in Resources */,
+				CA00EBF41E471BEC007E9B27 /* 02.jpg in Resources */,
+				CA00EBF71E471BEC007E9B27 /* 05.jpg in Resources */,
+				CA00EBF81E471BEC007E9B27 /* 06.jpg in Resources */,
+				CA00EBFB1E471BEC007E9B27 /* 09.jpg in Resources */,
+				CA00EBE31E471131007E9B27 /* Main.storyboard in Resources */,
+				CA00EBE21E471131007E9B27 /* LaunchScreen.storyboard in Resources */,
+				CA00EBF61E471BEC007E9B27 /* 04.jpg in Resources */,
+				CA00EBF31E471BEC007E9B27 /* 01.jpg in Resources */,
+				CA2B76061E446E7700A6A7B0 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		CA2B76171E446FB800A6A7B0 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "bash \"${BUILT_PRODUCTS_DIR}/${FRAMEWORKS_FOLDER_PATH}/Realm.framework/strip-frameworks.sh\"";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		CA2B75F71E446E7700A6A7B0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CA00EBDC1E46F5B3007E9B27 /* Picture.swift in Sources */,
+				CA2B76011E446E7700A6A7B0 /* ViewController.swift in Sources */,
+				CA00EBE71E471847007E9B27 /* DetailViewController.swift in Sources */,
+				CA2B75FF1E446E7700A6A7B0 /* AppDelegate.swift in Sources */,
+				CA00EBD81E46F2E4007E9B27 /* Diary.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		CA2B760B1E446E7700A6A7B0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		CA2B760C1E446E7700A6A7B0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		CA2B760E1E446E7700A6A7B0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 2REKM3AWZ4;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				INFOPLIST_FILE = StartRealm/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = io.realm.StartRealm;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		CA2B760F1E446E7700A6A7B0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 2REKM3AWZ4;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				INFOPLIST_FILE = StartRealm/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = io.realm.StartRealm;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		CA2B75F61E446E7700A6A7B0 /* Build configuration list for PBXProject "StartRealm" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CA2B760B1E446E7700A6A7B0 /* Debug */,
+				CA2B760C1E446E7700A6A7B0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CA2B760D1E446E7700A6A7B0 /* Build configuration list for PBXNativeTarget "StartRealm" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CA2B760E1E446E7700A6A7B0 /* Debug */,
+				CA2B760F1E446E7700A6A7B0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = CA2B75F31E446E7700A6A7B0 /* Project object */;
+}
