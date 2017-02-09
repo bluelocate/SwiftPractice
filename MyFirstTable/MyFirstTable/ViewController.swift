@@ -19,7 +19,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         
     }
     //우리반 친구들
-    let names: [[Str]:[String:Any]] = [["name" : "박세현","age" : 23, "nickname" : "다람쥐"],
+    let names: [[String:Any]] = [["name" : "박세현","age" : 23, "nickname" : "다람쥐"],
                                  ["name" : "임예은", "nickname" : "사과"],
                                  ["name" : "황순상","age" : 25, "nickname" : "포도"],
                                  ["name" : "정용선","nickname" : "수박"],

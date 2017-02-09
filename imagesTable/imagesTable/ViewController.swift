@@ -113,7 +113,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
             if let index = selectedIndex {
                 print("선택된 셀의 index는 \(index.section) 번째 섹션 \(index.row)번째 줄입니다." )
             
-                //선택된 셀에 해당되는 사진정보를 꺼재옵니다.
+                //선택된 셀에 해당되는 사진정보를 꺼내옵니다.
                 let info = self.photoInfos?[index.row]
                 
                 //꺼내온 사진 정보를 다음 뷰 컨트롤러의 변수로 넘겨줍니다
