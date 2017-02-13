@@ -24,9 +24,13 @@
  3 points: "B", "C", "M", "P",
 
  4 points: "F", "H", "V", "W", "Y",
+ 
  5 points: "K",
+ 
  8 points: "J", "X",
+ 
  10 points: "Q", "Z",
+ 
  The shiny new scrabble system instead stores the score per letter, which makes it much faster and easier to calculate the score for a word. It also stores the letters in lower-case regardless of the case of the input letters:
  
  "a" is worth 1 point.
@@ -45,10 +49,23 @@ class ETL {
     
     class func transform(oldValue : Dictionary<Int, Array<String>>) -> Dictionary<String, Int>{
         
+        var returnDictionary: [String:Int] = [:]
+        
+        for (value,keys) in oldValue{
+            
+            for key in keys {
+                returnDictionary[key.lowercased()] = value
+            }
+
+            
+            
+        }
         
         
         
-        return ["a" : 1 ]
+        
+        
+        return returnDictionary
     }
 }
     
